@@ -10,9 +10,9 @@ public class Level2ViewModel {
 	}
 	public int getResult(int row,int column,int adventureRow,int adventureCol,int monsterRow,int monsterCol,int goldRow,int goldCol)
 	{
-		int monsterStep=Math.abs(adventureRow-goldRow) + Math.abs(adventureCol-goldCol);
-		int  adventureStep=Math.abs(monsterRow-goldRow) + Math.abs(monsterCol-goldCol);
-		if(monsterStep<=adventureStep)
+		int adventureStep=Math.abs(adventureRow-goldRow) + Math.abs(adventureCol-goldCol);
+		int  monsterStep=Math.abs(monsterRow-goldRow) + Math.abs(monsterCol-goldCol);
+		if(monsterStep>=adventureStep)
 		{
 			return adventureStep;
 		}
