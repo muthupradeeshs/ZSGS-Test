@@ -12,9 +12,8 @@ public class Level3ViewModel {
 	{
 		int count;
 		
-		int monsterStep=Math.abs(adventureRow-goldRow) + Math.abs(adventureCol-goldCol);
-		int  adventureStep=Math.abs(monsterRow-goldRow) + Math.abs(monsterCol-goldCol);
-		int arr[][]=new int[adventureStep][2];
+		int adventureStep=Math.abs(adventureRow-goldRow) + Math.abs(adventureCol-goldCol);
+		int  monsterStep=Math.abs(monsterRow-goldRow) + Math.abs(monsterCol-goldCol);
 		int left=0,right=0;
 		if(monsterStep<=adventureStep)
 		{
